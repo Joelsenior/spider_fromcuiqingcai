@@ -17,7 +17,7 @@ for i in range(len(username_list)):
               }
     result_list.append(result)
 
-with open(tieba.csv,'w',encoding='UTF-8') as f:
+with open('Tieba.csv','w',encoding='UTF-8') as f:
     writer = csv.DictWriter(f,fieldnames=['username','content','reply_time'])
     writer.writeheader()
     writer.writerows(result_list)
